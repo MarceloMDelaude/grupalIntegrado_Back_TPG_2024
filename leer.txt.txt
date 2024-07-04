@@ -1,0 +1,83 @@
+
+
+desde DOS = Consola, se corre:
+node -v = nos dara la versi�n de node que tenemos instalado.
+npm -v  = nos dara la version de node package module, que tenemos install.
+
+En caso que no esten, debemos instalarlos con -install
+ o en su defecto de ser necesario update con  -
+
+el archivo package.Json
+se creo en node desde la consola, en la carpeta guardado el codigo de App
+desde consola, con:
+
+$> npm install -g npm
+
+Si npm no esta actualizado, el siguiente comando lo actualiza de forma global
+
+$> npm update -g npm
+
+Creo el directorio de mi proyecto
+
+$> mkdir my_app_node
+
+Me ubico en el directorio
+
+$> cd my_app_node
+
+NPM utiliza el archivo package.json para almacenar todos los datos relevantes a nuestra aplicaci�n.
+Nos realizara varias preguntas para configurar adecuadamente la app.
+Este archivo tambi�n se guardar�n las dependencias de paquetes del proyecto junto con su configuraci�n b�sica (nombre del proyecto, versi�n, etc).
+
+$> npm init
+La consola mostrara algo y se procede a configurar el package Json, con los datos de autoria, palabras de busqueda, ubicaci�n del repositorio y mas detalles.
+
+Is this ok? (yes) yes
+Instala las libreria en el directorio del app, y guarda su referencia en "package.json"
+
+$> npm install express --save
+$> npm install body-parser --save
+$> npm install nodemon --save
+
+CORRER nom foun para ver detalles de los pkg en uso.
+
+
+Crear el archivo index.js el cual inicia el app, este se debe crear en la raiz del app
+var express = require('express');
+var bodyParser = require('body-parser');
+
+var app = express();
+var port = process.env.PORT || 3525;
+
+// Convierte una petici�n recibida (POST-GET...) a objeto JSON
+app.use(bodyParser.urlencoded({extended:false}));
+app.use(bodyParser.json());
+
+app.get('/', function(req, res){
+	res.status(200).send({
+		message: 'GET Home route working fine!'
+	});
+});
+
+app.listen(port, function(){
+	console.log(`Server running in http://localhost:${port}`);
+	console.log('Defined routes:');
+	console.log('	[GET] http://localhost:3525/');
+});
+Inicia el app desde "index.js" como indica el "package.json" en la seccion "scripts"
+
+$> npm test
+
+.-------------------------------.
+Carpetas: 	
+			raiz = back
+			controller (aqui userConteller.js + )
+			node_modules
+			public (aqui el Frontend y todas paginas)
+			routes(aqui usuarios.js + )
+
+En el index.js, tener en cuenta el port de salida.
+
+app.use(express.static(path.join(__dirname,"public")));
+//en una carpeta statica cuyo nombre directorio es public, tendremos todo el Front.
+

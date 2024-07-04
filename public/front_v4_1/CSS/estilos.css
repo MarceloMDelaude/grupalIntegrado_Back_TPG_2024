@@ -1,0 +1,777 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(../Fonts/Ubuntu/UbuntuSansMono-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Ubuntu';
+}
+
+
+/*-------------------------------------Cabecera de la página-------------------------------------*/
+
+.navbar {
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.85);
+    font-family: "Courier Prime", monospace;
+
+}
+.navbar .colorLinksNav {
+    background-color: rgba(240, 239, 250, 0.623);
+    font-size: 1.5em;
+    color: rgb(168, 46, 46);
+    transition: 0.5s ease;
+}
+.navbar .navbar-nav .nav-link:hover {
+    background-color: rgb(235, 125, 52);
+}
+.navbar .logoNav {
+    height: 100px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+/*-------------------------------------Body Index-------------------------------------*/
+
+/*-------------------------------------Main Index-------------------------------------*/
+.arriba{
+    background-image: url(../img/main_img.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.tituloMain{
+    font-size: 1.8em;
+    padding-top: 5%;
+}
+.parrafoMain{
+    font-size: 1.2em;
+    padding: 3%;
+}
+.tablaMain{
+    font-size: 1.2em;
+    padding: 3%;
+}
+.tituloTabla{
+    font-size: 1.4em;
+}
+.pieMain{
+    font-size: 1.2em;
+    padding: 3%;
+}
+
+/*-------------------------------------Aside Medio Index-------------------------------------*/
+
+.medio{
+    background-image: url(../img/img.AsideMedio.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+    text-align: center;
+
+}
+.tituloAsideMedio{
+    font-size: 2em;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.imagenesAsideMedio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+/*-------------------------------------Aside-Abajo Index-------------------------------------*/
+.abajo{
+    background-image: url(../img/img.AsideAbajo.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding-top: 5%;
+}
+.tituloAsideAbajo{
+    padding-bottom: 5%;
+    font-size: 2em;
+}
+.flex-container{
+    border: 1,5px solid rgb(0, 0, 0);
+    background-color: rgb(56, 55, 91); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.caja-ox{
+    width:flex;
+    height: 270px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color:rgb(144, 67, 119);
+    color:rgb(232, 232, 241);
+    font-weight: bold;
+    padding: 1%;
+    text-align: center;
+    margin: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+}
+
+
+/*-------------------------------------Formulario de contacto-------------------------------------*/
+
+.mainForm{
+    background-image: url(../img/img.Form.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1200px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.tituloForm{
+    padding-top: 2em;
+    padding-bottom: 1.5em;
+    font-size: 2.5em;
+    color: white;
+}
+.form{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 30em;
+    height: 42em;
+    padding: 2em;
+    color: rgb(255, 255, 255);
+    background-color: rgba(120, 119, 123, 0.3);
+    font-weight: bold;
+    border-radius: 0.5rem;
+    box-shadow: inset 1px 2px 22px 4px rgba(0, 0, 0, 0.85);
+    font-size: 1.3em;
+}
+label{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+input{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+option{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1em;
+}
+.calendario{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+button{
+    background-color: #000000; 
+    border-radius: 0.5rem;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 3em;
+    margin-left: 5em;
+    margin-right: 5em;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+button:hover {
+    background-color: rgb(235, 125, 52);
+    color: rgb(252, 252, 252);
+}
+
+
+/*-------------------------------------Main Función Flecha-------------------------------------*/
+.mainFuncionFlecha{
+    background-image: url(../img/img.FuncionFlecha.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1400px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.ResultadoFuncionFlecha{
+    padding: 1.5em ;
+    margin-top: 4em;
+    margin-bottom: 3em;
+    margin-left: 2%;
+    margin-right: 2%;
+    border: 4px solid black;
+}
+/*-------------------------------------Calculadora-------------------------------------*/
+.calculadora{
+    background-image: url(../img/SectionCalculadora.jpg);
+    background-size: 100%;
+    background-position: 1em;
+    width: 99%;
+    height: 800px;
+    text-align: center;
+    padding-bottom: 4px;
+    color: white;
+}
+
+.tituloHeader{
+    padding-bottom: 2%;
+    font-size: 5em;
+    text-align-last: center;
+}
+.display{
+    overflow:scroll;
+    size-adjust:auto;
+    mask-size:contain;
+}
+.enlace1{
+    font-size: 2em;
+}
+
+/*--------------------------CRUD_ USUARIOS_------------------------------------------------- */
+*{
+    padding: 5px;
+}
+h1, h2 {
+    background-color: rgba(9, 60, 156, 0.459);
+    color: #333;
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    background-image: url(../img/img.Form.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1200px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    /*nuestro*/
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li .actions {
+    display: flex;
+    gap: 10px;
+}
+
+li button {
+    background-color: #007bff;
+}
+
+li button:hover {
+    background-color: #0056b3;
+}
+
+li .delete {
+    background-color: #dc3545;
+}
+
+li .delete:hover {
+    background-color: #c82333;
+}
+
+/*------FIN FORM CRUD USUARIOS------------*/
+
+/*-------------------------------------Main Quienes somos-------------------------------------*/
+.mainQuienesSomos{
+    background-image: url(../img/img\ QuienesSomos.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.info_QuienesSomos{
+    margin-top: 10%;
+}
+/*-------------------------------------Footer-------------------------------------*/
+
+
+footer{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    font-size: 1em;
+}
+.tituloRedes {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.tituloRedes h2 {
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.iconosRedes{
+    padding-bottom: 20px;
+}
+
+.logoFb {
+    width: 60px;
+    height: 60px;
+}
+
+.logoIg {
+    width: 50px;
+    height: 50px;
+    background-color: aliceblue;
+}
+.logoX{
+    width: 40px;
+    height: 40px;
+}
+.firmaFooter{
+    text-align: center;
+}
+/*XXXXXXXXXXXXXXXXXXXXXXXXXXX_____________xxxxxxxxxxxx___________XXXXXXXXXXXXXXXXX*/
+/*Aqui comienza el Media Query mediano con minimo de 510 a maximo de 990 pixeles */
+
+@media (max-width:990px) 
+{
+    body{
+        width: 98%;
+        height: 100%;
+    }    
+    
+    /*-------------------------------------Cabecera de la página-------------------------------------*/
+
+    .navbar {
+        box-sizing: 50%;
+    }
+/*-------------------------------------Aside Arriba Index-*/
+
+    .img{
+        width: 98%;
+        height: 60%;
+    }
+    
+    .arriba{   /*ubicacion del parrafo*/
+        width: 99%;
+        height: 900px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        }
+/*-------------------------------------Aside Medio Index-*/
+    .medio{
+        width: auto;
+        height: 1100px;
+        text-align: center;
+        border-image-width: auto;
+    }
+    .imagenesAsideMedio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img1{
+        width: auto;
+        height: 50%;
+    }
+    .img2{
+        padding-top: 30px;
+        width: auto;
+        height: 50%;
+    }
+/*-------------------------------------Aside-Abajo Index-*/
+    .abajo{
+        width: auto;
+        height: 750px;
+        text-align: center;
+        padding-top: 5%;
+    }
+    
+    .flex-container{
+        display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    /*--------------------- COMENTADO PARA PROBBAR LO DE JULY, aqui queda en arrow/horizontal
+    .flexbox-container{
+        margin: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex;
+        align-items: center;    
+    }
+    
+    .caja-ox{
+        width: 50px;;
+        height: 280px;
+        border: 0.1 solid grey;
+        margin: 0.5px;
+        flex direction:column;
+        flex-grow: 20px;
+        flex-shrink: 0;
+        flex-basis: 0;
+        font-size: 0.7em;
+    }
+    */
+/* VER  DE ARRIBA  JULYYYYYY*/
+
+/*-------------------------------------Main Función Flecha-------------------------------------*/
+    .mainFuncionFlecha{
+        background-size: 95%;
+        width: auto;
+        height: 640px;
+    }
+    /*-------------------------------------Calculadora-------------------------------------*/
+.calculadora{
+    background-size: cover;
+    background-position: 0.5em;
+    width: 99%;
+    height: auto;  /*con 800 queda bien, pero se pierde medio boton*/
+    padding-bottom: 2px;
+}
+
+.tituloHeader{
+    padding-bottom: 0.5%;
+    font-size: 2em;
+}
+
+}
+/*Aqui termina el Media Query mediano desde 501 hasta 990 pixeles en adelante */
+/*+-------------------------------------------*/
+
+
+
+/*--------------------------------------------------*/
+/*----Aqui comienza el Media Query mas pequeño con minimo de 0 a maximo de 500 pixeles */
+@media (min-width:100px   max-width:500px) 
+{
+    body{
+        width: 98%;
+        height: auto;
+    }    
+    
+    /*-------------------------------------Cabecera de la página-------------------------------------*/
+
+    .navbar {
+        box-sizing: 40%;
+    }
+/*-------------------------------------Aside Arriba Index-*/
+    .img{
+        width: 98%;
+        height: 1200px;
+    }
+
+    .arriba{
+        width: 98%;
+        height: 1200px;
+        display: flex;
+        align-items: center;
+        }
+/*-------------------------------------Aside Medio Index-*/
+
+    .medio{
+        width: 95%;
+        height: 50%;
+        text-align: center;
+        border-image-width: auto;
+    }
+    
+    .imagenesAsideMedio{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .img1{
+        width: auto;
+        height: 50%;
+        float: left;
+    }
+    .img2{
+        padding-top: 10px;
+        width: auto;
+        height: 50%;
+        float: bottom;
+    }
+/*-------------------------------------Aside-Abajo Index-*/
+    /*--------de aca---Funciona en posición horizontal, arrow 
+    .abajo{
+        width: 100%;
+        height: 50%;
+    }
+
+    .flexbox-container{
+        margin: 1%;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex;
+        align-items: center;
+    
+    }
+    /*------------hasta aca--------------*/
+
+    .abajo{
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        padding-top: 15%;
+    }
+    .flex-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .caja-ox{
+/*        background-color: rgb(179, 146, 173);*/
+        width: 50px;
+        height: 250px;
+        border: 0.1 solid grey;
+        margin: 0.5px;
+        flex-direction: column;
+        flex-grow: 20px;
+        flex-shrink: 0;
+        flex-basis: 0;
+        font-size: 0.7em;
+    }
+/*-------------------------------------Formulario de contacto-------------------------------------*/
+
+    .mainForm{
+        background-image: url(/img/img.Form.jpg);
+        background-size: cover;
+        width: 99%;
+        height: 1200px;
+        align-items: center;
+    }
+
+/*-------------------------------------Main Función Flecha-------------------------------------*/
+    .mainFuncionFlecha{
+        background-image: url(/img/img.FuncionFlecha.jpg);
+        background-size: cover;
+        width: auto;
+        height: 640px;
+    }
+
+/*-------------------------------------Calculadora-------------------------------------*/
+.calculadora{
+    background-size: cover;
+    background-position: 0;
+    width: 98%;
+    height: 800px;
+    padding-bottom: 1px;
+    color: rgb((114, 88, 88)34, 130, 130);
+}
+
+.tituloHeader{
+    padding-bottom: 1%;
+    font-size: 1em;
+}
+
+.numeros{
+    object-position: 2rem;
+}
+
+/*-------------------------------------Main Quienes somos-------------------------------------*/
+    .mainQuienesSomos{
+        background-size: cover;
+        width: 98%;
+        height: 300px;
+    }
+}
+/*Aqui termina el Media Query mas pequeño con maximo 480/500 pixeles */
+/*--------------------------------------*/
+
+
+
+
+/*Aqui comienza el Media Query mas grande desde 995 pixeles en adelante */
+/*
+@media (min-width: 995px) and (max-width: 2880px) 
+{
+    body{
+        background-color:rgb(103, 102, 104);
+        width: 100%;
+        height: auto;
+    }
+    h1{
+        background-color: rgb(233, 250, 85);
+    }
+    h2{
+        background-color: rgba(218, 218, 2, 0.884);
+    }
+    h3{
+        background-color: rgb(240, 250, 134);
+    }
+    h4{
+        background-color: rgb(248, 224, 7) ;
+    }
+    .img{
+        width: auto;
+    }
+
+    .arriba{
+        background-color:rgba (17, 168, 3,0.25);
+        color:darkslategrey;
+        width: 90%;
+        height: 300px;
+    }
+
+    .medio{
+        padding: 1px;
+        background-color: rgb(19, 243, 22);
+        color:darkslategray;
+        width: 98%;
+        height: 400px;
+    }
+    /*background-color: lightgreen;*/
+    /*
+    .izq{
+        width: 30%;
+        height: auto;
+        float: left;
+    }
+
+    .der{
+        background-color: lightslategray;
+        width: auto;
+        height: auto;
+        float: right;
+    }
+    .abajo{
+        background-color:  rgb(8, 197, 68);
+        color: darkslateblue;
+        width: 98%;
+        height: 400px;
+    }
+    .flexbox-container{
+        border: 1,5px solid darkgrey;
+        background-color: cadetblue;*/
+      /*  margin: 0 auto;    /* hace que contenedor padre, se ubique equidistante de los bordes.  */         
+/*        display: flex; /*Overflow: hidden = oculta lo que excede de posición.  
+                        Overflow: scroll = habilita el scroll para desplazarse.  
+                        */
+/*        flex-direction: row;  /*por defecto es row = horizontal.
+                                row-reverse = horizontal, invertida.
+                                column = vertical o columna.
+                                column-reverse = vertical, invertida.
+                                */
+/*        flex-wrap: nowrap;  /*por defecto nowrap = ubica al lado, horizontal
+                                wrap = las ubica en forma de grilla o tabla.
+                            */
+/*    }
+    .caja-ox{
+        border: 2px solid grey;
+        background-color:aquamarine;
+        color:blue;
+        font-family:Verdana, Tahoma, sans-serif;
+        font-style: oblique;
+        font-weight: bold;
+        width: auto;
+        height: auto;
+        text-align: center;
+        margin: 5px;
+    }
+    p{
+        background-color:rgb(55, 51, 66);
+        color: rgb(172, 139, 235);
+    }
+    
+    .enlace1{
+        color:darkblue;
+        font-size: 22px;
+    }
+    
+    .tdContacto{
+        background-color: rgba(51, 31, 90, 0.14);
+    }
+    
+    .label{
+        background-color: rgb(181, 185, 181);
+        color: rgb(117, 117, 151);
+        font-weight: bold;
+    }
+    
+    .label_txt{
+        color: slategray;
+    }
+}
+/*Aqui termina el Media Query mas grande desde 780 pixeles en adelante a 2880 */

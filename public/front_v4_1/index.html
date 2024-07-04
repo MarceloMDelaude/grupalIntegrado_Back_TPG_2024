@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--LINK DE MI CSS-->
+    <link rel="stylesheet" media="screen" href="../front_v4_1/CSS/estilos.css">
+    <link rel="icon" href="../front_v4_1/img/grupo16_Qui.ico" alternative="icono del Grupo 16" >
+    <title>Flexbox_Responsive_Document_Grupo16_EnGit</title>
+</head>
+<body>
+    <header>          
+        <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"> <img class="logoNav" src="../front_v4_1/img/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hamburguesa" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="hamburguesa">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link colorLinksNav" href="../front_v4_1/index.html">Home|</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link colorLinksNav" href="../front_v4_1/Pages/funcion_Flecha.html">Funcion=edad|</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link colorLinksNav" href="../front_v4_1/Pages/calculadora.html">Calculadora|</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link colorLinksNav" href="../front_v4_1/Pages/quienesSomos.html">Quienes somos|</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link colorLinksNav" href="../front_v4_1/Pages/formulario.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link colorLinksNav" href="../indexBack.html">CRUD Usuarios</a>
+                </li>
+
+            </ul>
+        </div>
+        </nav>
+    </header>
+    <main class="arriba">
+        
+        <h4 class="tituloMain">GRUPO 16 _desarrollo con_ @media (responsive) + Flexbox (auto posición) + enlaces</h4> 
+        <div class="parrafoMain">
+            <p>Los elementos del grupo 16 suelen denominarse calcógenos. El oxígeno, el azufre y el selenio son no metales
+            el teluro es un metaloide y el polonio un metal.</p>
+            <p>Si bien el O y el S son elementos altamente electronegativos, el O se diferencia considerablemente de los elementos del grupo.
+            La alotropía es una característica importante en el grupo, siendo el azufre el elemento que presenta más alótropos naturales.</p>
+        </div>
+        <table class="tablaMain">
+            <tr class="tituloTabla">
+                <th>Elemento</th>
+                <th>Símbolo</th>
+                <th>Configuración electrónica</th>
+            </tr>
+            <tr>
+                <td>Oxígeno</td>
+                <td>O</td>
+                <td>[He]2s2 2p4</td>
+            </tr>
+            <tr>
+                <td>Azufre</td>
+                <td>S</td>
+                <td>[Ne]3s2 3p4</td>
+            </tr>
+            <tr>
+                <td>Selenio</td>
+                <td>Se</td>
+                <td>[Ar]3d10 4s2 4p4</td>
+            </tr>
+            <tr>
+                <td>Teluro</td>
+                <td>Te</td>
+                <td>[Kr]4d10 5s2 5p4</td>
+            </tr>
+            <tr>
+                <td>polonio</td>
+                <td>Po</td>
+                <td>[Xe]4f14 5d10 6s2 6p4</td>
+            </tr>
+        </table>
+        <div class="pieMain">
+            <p>La configuración electrónica sugiere que el número de oxidación máximo es +6</p>
+            <a href="http://www.fcn.unp.edu.ar/sitio/quimicainorganica/wp-content/uploads/2010/09/grupo_16.pdf">Caracteristicas elementos</a>
+        </div>
+    </main>
+    <aside class="medio">
+            <h3 class="tituloAsideMedio">Media Query y Diseño Responsive</h3> 
+        <div class="imagenesAsideMedio">
+            
+                <img class="img1" src="./img/img formula.jpg" alt="imgen fórmulas" > 
+
+                <img class="img2" src="/img/img grupos funcionales.png" alt="imagen gupos funcionales" >
+
+        </div>
+    </aside>
+    <aside class="abajo">  
+        <h3 class="tituloAsideAbajo">Abajo = Flexbox ... </h3>
+        <div class="flex-container">
+            <div class="caja-ox">
+                <h4>Caja = Oxigeno </h4>
+                <p>Es incoloro, volatil, es un gas altamente reactivo, de olor fuerte, color azul y oxidante, es una molécula
+                diamagnética y angular</p>
+            </div>
+            <div class="caja-ox">
+                <h4>Caja = Azufre</h4>
+                <p>Es un sólido amarillo, aislante eléctrico y térmico, insoluble en agua</p>
+                </div>
+            <div class="caja-ox">
+                <h4>Caja = Selenio</h4>
+                <p>Es fotoconductor (usado en fotocopiadoras, celdas solares), semiconductor y esencial para
+                los seres humanos </p>
+            </div>
+            <div class="caja-ox">
+                <h4>Caja = Teluro</h4>
+                <p>Es un sólido plateado con cierto brillo metálico, altamente tóxico </p>
+            </div>
+            <div class="caja-ox">
+                <h4>Caja = Polonio </h4>
+                <p>Es un metal muy tóxico, con empaquetamiento cúbico simple, todos sus isótopos son radiactivos</p>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="tituloRedes">
+            <h2>
+            Seguinos en nuestras redes!!
+            </h2>
+            <div class="iconosRedes" >
+                <a href="https://es-la.facebook.com/"><img class="logoFb" src="../img/logo facebook.png" alt="logo facebook"></a>
+                <a href="https://www.instagram.com/"><img class="logoIg" src="../img/logo ig.png" alt="logo instagram"></a>
+                <a href="https://twitter.com/X"><img class="logoX" src="../img/logo x.jpg" alt="logo X" ></a>
+            </div>  
+        </div>
+            <p class="firmaFooter">2024 | Diseño web por Parra Minatta Julieta, Pablo Agostinelli y Marcelo M. Delaude</p>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+     crossorigin="anonymous">
+    </script>
+</body>
+</html>
